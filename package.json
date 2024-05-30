@@ -2,10 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next-export-optimize-images",
     "start": "next start",
     "prettier": "prettier --write .",
-    "validate": "eslint src/ && tsc"
+    "validate": "next lint"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -18,12 +18,11 @@
     "@types/node": "^20.12.13",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
     "autoprefixer": "^10.4.19",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.34.2",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.3",
     "gray-matter": "^4.0.3",
+    "next-export-optimize-images": "^4.4.0",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "remark": "^15.0.1",

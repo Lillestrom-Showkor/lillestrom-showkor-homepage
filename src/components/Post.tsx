@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next-export-optimize-images/image';
 import cn from 'classnames';
 
 import type Author from 'src/interfaces/author';
@@ -29,7 +30,7 @@ const Post = ({ title, coverImage, date, content, ogImageUrl, embeddedYouTube }:
       <div className={style.meta}>
         {formatDate(date)}
       </div>
-      <img className={style.image} title={title} src={coverImage} alt={title} sizes="(max-width: 40rem) 40rem, 64rem" />
+      <Image className={style.image} title={title} src={coverImage} alt={title} sizes="(max-width: 40rem) 40rem, 64rem" />
       <div className={cn(style.content, markdownStyles.markdown)} dangerouslySetInnerHTML={{ __html: content }} />
       {embeddedYouTube && (
         <iframe
