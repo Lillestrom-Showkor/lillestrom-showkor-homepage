@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next-export-optimize-images/image';
+import Image from 'next/image';
 import cn from 'classnames';
 
 import type Author from 'src/interfaces/author';

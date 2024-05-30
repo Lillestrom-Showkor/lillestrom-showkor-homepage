@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next-export-optimize-images",
+    "build": "next build",
     "start": "next start",
     "prettier": "prettier --write .",
     "validate": "next lint"
@@ -22,7 +22,6 @@
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.3",
     "gray-matter": "^4.0.3",
-    "next-export-optimize-images": "^4.4.0",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "remark": "^15.0.1",
