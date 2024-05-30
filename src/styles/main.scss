@@ -1,0 +1,16 @@
+@use 'src/styles/base/form.scss';
+@use 'src/styles/base/typography.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next,
+.fontwrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,21 @@
+.post {
+  max-width: 100%;
+
+  .meta {
+    font-weight: 200;
+    margin-bottom: 2rem;
+  }
+
+  .image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .embedded {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    max-width: 100%;
+  }
+}
