@@ -18,16 +18,16 @@ type PostProps = {
   ogImageUrl: string;
 };
 
-const Post = ({ title, coverImage, date, author, content, ogImageUrl, embeddedYouTube }: PostProps) => {
+const Post = ({ title, coverImage, date, content, ogImageUrl, embeddedYouTube }: PostProps) => {
   return (
     <article className={style.post}>
       <Head>
-        <title>{`Jack Army Scandinavia | ${title}`}</title>
+        <title>{`Lillestrøm Showkor | ${title}`}</title>
         <meta property="og:image" content={ogImageUrl} />
       </Head>
       <h2 className={style.title}>{title}</h2>
       <div className={style.meta}>
-        {formatDate(date)}, {author.name}
+        {formatDate(date)}
       </div>
       <img className={style.image} title={title} src={coverImage} alt={title} sizes="(max-width: 40rem) 40rem, 64rem" />
       <div className={cn(style.content, markdownStyles.markdown)} dangerouslySetInnerHTML={{ __html: content }} />
