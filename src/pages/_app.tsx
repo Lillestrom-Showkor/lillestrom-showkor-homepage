@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import 'src/styles/main.scss';
 
-import { Oswald as GoogleFont } from 'next/font/google';
+import { Roboto_Condensed as GoogleFont } from 'next/font/google';
 
 const font = GoogleFont({ subsets: ['latin'] });
 

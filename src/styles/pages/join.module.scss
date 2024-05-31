@@ -1,3 +1,38 @@
+@use 'src/styles/abstracts/_constants' as constants;
+
 .join {
 
+  display: flex;
+  flex-direction: column;
+  
+  .imageKorsang {
+    
+    align-self: center;
+
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+
+}
+
+@media screen and (min-width: constants.$mobileMaxWidth) {
+  .join {
+
+    display: initial;
+    flex-direction: column;
+    
+    .imageKorsang {
+      
+      @media screen and (min-width: constants.$mobileMaxWidth) {
+        float: right;
+        margin: 1rem 0 1rem 1rem;
+      }
+  
+    }
+  
+  
+  }
 }
