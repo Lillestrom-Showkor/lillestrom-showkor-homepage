@@ -32,6 +32,8 @@ const Post = ({ title, coverImage, date, content, ogImageUrl, embeddedYouTube }:
         className={style.image}
         title={title}
         src={coverImage}
+        width={560}
+        height={315}
         alt={title}
         sizes="(max-width: 40rem) 40rem, 64rem"
       />
@@ -41,7 +43,7 @@ const Post = ({ title, coverImage, date, content, ogImageUrl, embeddedYouTube }:
           className={style.embedded}
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/11W17bc9xow"
+          src={embeddedYouTube}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
