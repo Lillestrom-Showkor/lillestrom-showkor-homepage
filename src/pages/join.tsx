@@ -13,7 +13,7 @@ export default function AboutPage() {
       </Head>
       <article className={style.join}>
         <h2>Bli med i Lillestrøm Showkor!</h2>
-        <ContactForm subject={'Innmelding'} />
+        <ContactForm subject={'Innmelding Lillestrøm Showkor'} />
       </article>
     </Layout>
   );

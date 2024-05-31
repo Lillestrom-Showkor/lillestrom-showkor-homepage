@@ -13,7 +13,7 @@ export default function BookingPage() {
       </Head>
       <article className={style.booking}>
         <h2>Booking</h2>
-        <ContactForm subject="Booking" />
+        <ContactForm subject="Booking Lillestrøm Showkor" />
       </article>
     </Layout>
   );
