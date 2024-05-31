@@ -1,0 +1,28 @@
+.contactform {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    align-self: flex-start;
+  }
+
+  input, textarea {
+    align-self: flex-start;
+  }
+
+  textarea {
+    align-self: stretch;
+    height: 10rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    align-self: flex-start;
+  }
+
+  .success {
+    color: green;
+    margin-top: 1rem;
+  }
+
+}
