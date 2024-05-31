@@ -14,6 +14,7 @@ type NavigationProps = {
 export const Navigation = ({ className, isOpen, onClose }: NavigationProps) => {
   return (
     <nav className={cn(className, style.navigation, isOpen && style.open)}>
+      <h3 className={style.navtitle}>Lillestrøm Showkor</h3>
       <ul className={style.menu}>
         <li className={style.item}>
           <Link href="/">{'Hjem'}</Link>

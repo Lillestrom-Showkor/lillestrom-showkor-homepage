@@ -28,6 +28,21 @@
     overflow-y: hidden;
     background-color: transparent;
     padding: 0;
+
+    &.open {
+      right: -20rem;
+      box-shadow: none;
+    }
+
+  }
+
+  .navtitle {
+
+    font-weight: 400;
+
+    @media screen and (min-width: constants.$mobileMaxWidth) {
+      display: none;
+    }
   }
 
   .menu {
@@ -35,7 +50,7 @@
     flex-direction: column;
     gap: 1rem;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     list-style-type: none;
     margin: 0;
     padding: 0 1rem;
