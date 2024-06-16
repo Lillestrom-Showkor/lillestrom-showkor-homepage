@@ -14,8 +14,8 @@ export default function AboutPage() {
         <h2>Bli med i Lillestrøm Showkor!</h2>
         <p>
           Så gøy at du tenker på å bli med i koret vårt! Dersom du vil melde interesse med en gang, kan du gå rett ned
-          til registreringsskjemaet. Ellers kan du her lese litt mer om både hvordan man blir med samt hva vi gjør i
-          koret.
+          til <a href={'#form'}>registreringsskjemaet</a> på bunnen av denne siden. Ellers kan du her lese litt mer om
+          både hvordan man blir med samt hva vi gjør i koret.
         </p>
         <Image alt={'Korsangere'} src={korsangImg} className={style.imageKorsang} />
 
@@ -63,7 +63,7 @@ export default function AboutPage() {
         </p>
 
         <h3>Meld interesse her:</h3>
-        <ContactForm subject={'Innmelding Lillestrøm Showkor'} />
+        <ContactForm subject={'Innmelding Lillestrøm Showkor'} id={'form'} />
       </article>
     </Layout>
   );

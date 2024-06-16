@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import cn from 'classnames';
 
 import style from 'src/styles/components/ContactForm.module.scss';
 
 type ContactFormProps = {
   subject?: string;
+  className?: string;
+  id?: string;
 };
 
-export default function ContactForm({ subject }: ContactFormProps) {
+export default function ContactForm({ subject, className, id }: ContactFormProps) {
   const [state, handleSubmit] = useForm('mzbnlzvy');
 
   return (
-    <form className={style.contactform} onSubmit={handleSubmit}>
+    <form id={id} className={cn(style.contactform, className)} onSubmit={handleSubmit}>
       <label htmlFor="email">E-postadresse</label>
       <input id="email" type="email" name="email" required={true} />
       <ValidationError className={style.error} prefix="E-postadresse" field="email" errors={state.errors} />

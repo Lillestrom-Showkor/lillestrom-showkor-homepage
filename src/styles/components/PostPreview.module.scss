@@ -50,6 +50,8 @@
   }
 
   .excerpt {
+    font-size: 1.25rem;
+    line-height: 1.25;
     @media screen and (min-width: constants.$mobileMaxWidth) {
       grid-area: excerpt;
     }

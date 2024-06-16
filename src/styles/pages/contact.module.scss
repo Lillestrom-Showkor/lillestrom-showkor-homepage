@@ -1,3 +1,35 @@
+@use 'src/styles/abstracts/_constants' as constants;
+
 .contact {
 
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  
+  .image {
+    
+    align-self: center;
+
+  }
+
+}
+
+@media screen and (min-width: constants.$mobileMaxWidth) {
+  .contact {
+
+    display: initial;
+    flex-direction: column;
+    
+    .image {
+      float: right;
+      margin: 0rem 0 1rem 1rem;
+  
+    }
+
+    .form {
+      clear: both;
+    }
+  
+  
+  }
 }

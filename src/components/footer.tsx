@@ -17,28 +17,29 @@ const Footer: React.FunctionComponent<FooterProps> = ({ className }: FooterProps
     <footer className={cn(className, style.footer)}>
       <section className={style.content}>
         <section className={style.basedata}>
-          <span>{String.fromCodePoint(0x000a9)} 2024 - Lillestrøm Showkor</span>
-          {/* orgnr og vippsnr? */}
+          <span>{`${String.fromCodePoint(0x000a9)} 2024 - Lillestrøm Showkor`}</span>
+          <span>{'Org. nr.: 922 985 022'}</span>
+          <span>{'Vipps: 766 577'}</span>
         </section>
         <section className={style.socialMedia}>
-          <span className={style.socialMediaLink}>
+          <span className={style.footerLink}>
             <a href={'https://www.instagram.com/lillestromshowkor/'}>
               <Image src={instagramLogo} alt={'Instagram Logo'} />
-              Instagram
+              {'Instagram'}
             </a>
           </span>
-          <span className={style.socialMediaLink}>
+          <span className={style.footerLink}>
             <a href={'https://www.facebook.com/lillestromshowkor/'}>
               <Image src={facebookLogo} alt={'Facebook Logo'} />
-              Facebook
+              {'Facebook'}
             </a>
           </span>
         </section>
         <section className={style.grasrotandelen}>
-          <span className={style.socialMediaLink}>
+          <span className={style.footerLink}>
             <a href={'https://www.norsk-tipping.no/grasrotandelen/din-mottaker/922985022'}>
               <Image src={ntLogo} alt={'Norsk Tipping Logo'} />
-              Grasrotandelen
+              {'Grasrotandelen'}
             </a>
           </span>
         </section>

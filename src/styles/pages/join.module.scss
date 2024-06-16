@@ -4,6 +4,7 @@
 
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
   
   .imageKorsang {
     
@@ -25,12 +26,8 @@
     flex-direction: column;
     
     .imageKorsang {
-      
-      @media screen and (min-width: constants.$mobileMaxWidth) {
-        float: right;
-        margin: 1rem 0 1rem 1rem;
-      }
-  
+      float: right;
+      margin: 1rem 0 1rem 1rem;
     }
   
   

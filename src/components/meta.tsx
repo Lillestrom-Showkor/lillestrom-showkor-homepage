@@ -26,6 +26,8 @@ const Meta = ({ description, title }: MetaProps) => {
       <meta property="og:description" content={description} />
       <meta property="og:type" content={'website'} />
       <title>{compositeTitle}</title>
+      <meta name="viewport" content="target-densitydpi=device-dpi" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
   );
 };
