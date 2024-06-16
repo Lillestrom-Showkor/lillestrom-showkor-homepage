@@ -4,14 +4,14 @@
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  @media screen and (min-width: constants.$maxWidth) {
+  @media screen and (min-width: constants.$maxWidthBreakpoint) {
     grid-template-columns: 1fr constants.$maxWidth 1fr;
   }
 }
 
 @mixin content-wrapper-content {
   grid-column: 1;
-  @media screen and (min-width: constants.$maxWidth) {
+  @media screen and (min-width: constants.$maxWidthBreakpoint) {
     grid-column: 2;
   }
 }

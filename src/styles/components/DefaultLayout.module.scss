@@ -19,16 +19,17 @@
     align-self: stretch;
   }
 
-  .main {
+  main {
     flex: 1 1 auto;
     position: relative;
+    overflow: auto;
     margin-top: 1rem;
     padding: 1rem;
     width: 100%;
     transition-property: padding;
     transition-duration: 200ms;
 
-    @media screen and (min-width: constants.$maxWidth) {
+    @media screen and (min-width: constants.$maxWidthBreakpoint) {
       padding: 1rem 0;
       max-width: constants.$maxWidth;
     }
