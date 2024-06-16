@@ -10,6 +10,8 @@
   .header {
     flex: 0 0 auto;
     align-self: stretch;
+    border-bottom: 1px solid grey;
+    padding: 0 1rem;
   }
 
   .nav {
@@ -19,14 +21,15 @@
 
   .main {
     flex: 1 1 auto;
+    position: relative;
     margin-top: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem;
     width: 100%;
     transition-property: padding;
     transition-duration: 200ms;
 
     @media screen and (min-width: constants.$maxWidth) {
-      padding: 1rem;
+      padding: 1rem 0;
       max-width: constants.$maxWidth;
     }
   }

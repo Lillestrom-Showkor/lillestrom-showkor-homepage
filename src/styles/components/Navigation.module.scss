@@ -2,6 +2,7 @@
 
 .navigation {
   position: fixed;
+  z-index: 1000;
   height: 100%;
   top: 0;
   right: -20rem;
@@ -9,8 +10,8 @@
   border-left: 1px solid #ccc;
   overflow-y: auto;
   transition: right 300ms;
-  background-color: #f8f8f8;
-  padding: 2rem 4rem 0.5rem 1.5rem;
+  background-color: #fff;
+  padding: 0.5rem 4rem 0.5rem 1.5rem;
 
   &.open {
     right: 0;
@@ -38,11 +39,12 @@
 
   .navtitle {
 
-    font-weight: 400;
-
     @media screen and (min-width: constants.$mobileMaxWidth) {
       display: none;
     }
+
+    margin-top: 1rem;
+
   }
 
   .menu {
@@ -53,7 +55,7 @@
     font-size: 1.5rem;
     list-style-type: none;
     margin: 0;
-    padding: 0 1rem;
+    padding: 1rem 1rem 0 0;
     text-wrap: nowrap;
 
     .item a {

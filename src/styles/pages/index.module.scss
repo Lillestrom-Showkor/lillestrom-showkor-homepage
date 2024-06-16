@@ -1,12 +1,35 @@
+@use 'src/styles/abstracts/_constants' as constants;
+
 .index {
 
-  .postPrev:first-child {
-    margin-top: 1rem;
+  .collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+
+    .coverImg {
+      object-fit: cover;
+      grid-column: 1 / 3;
+      grid-row: 1;
+      width: 100%;
+      height: auto;
+    }
+    .coverImg2 {
+      object-fit: cover;
+      grid-column: 1;
+      grid-row: 2;
+      width: 100%;
+      height: auto;
+    }
+    .coverImg3 {
+      object-fit: cover;
+      grid-column: 2;
+      grid-row: 2;
+      width: 100%;
+      height: auto;
+    }
   }
 
-  .postPrev:not(:last-child) {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid lightgray;
-    margin-bottom: 2rem;
-  }
+
 }

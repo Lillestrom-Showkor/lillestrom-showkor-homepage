@@ -1,7 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import cn from 'classnames';
 
+import info from 'data/info.json';
+import logo from 'public/images/logoimg.png';
 import style from 'src/styles/components/Navigation.module.scss';
 import CloseIcon from 'src/components/icons/CloseIcon';
 
@@ -14,19 +17,19 @@ type NavigationProps = {
 export const Navigation = ({ className, isOpen, onClose }: NavigationProps) => {
   return (
     <nav className={cn(className, style.navigation, isOpen && style.open)}>
-      <h3 className={style.navtitle}>Lillestrøm Showkor</h3>
+      <Image className={style.navtitle} src={logo} alt={`${info.name} Logo`} width={64} />
       <ul className={style.menu}>
         <li className={style.item}>
           <Link href="/">{'Hjem'}</Link>
         </li>
         <li className={style.item}>
-          <Link href="/about">{'Om oss'}</Link>
+          <Link href="/blog">{'Aktuelt'}</Link>
         </li>
         <li className={style.item}>
-          <Link href="/booking">{'Booking'}</Link>
+          <Link href="/contact">{'Kontakt'}</Link>
         </li>
         <li className={style.item}>
-          <Link href="/join">{'Bli med i koret'}</Link>
+          <Link href="/join">{'Opptak'}</Link>
         </li>
       </ul>
       <CloseIcon className={style.close} onClick={() => onClose && onClose()} />

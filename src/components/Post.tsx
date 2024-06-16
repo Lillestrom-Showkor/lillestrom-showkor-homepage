@@ -21,9 +21,8 @@ type PostProps = {
 
 const Post = ({ title, coverImage, date, content, ogImageUrl, embeddedYouTube }: PostProps) => {
   return (
-    <article className={style.post}>
+    <article className={style.post} title={title}>
       <Head>
-        <title>{`Lillestrøm Showkor | ${title}`}</title>
         <meta property="og:image" content={ogImageUrl} />
       </Head>
       <h2 className={style.title}>{title}</h2>

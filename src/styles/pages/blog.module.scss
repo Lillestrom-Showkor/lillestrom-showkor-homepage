@@ -1,0 +1,26 @@
+@use 'src/styles/abstracts/_constants' as constants;
+
+.blog {
+
+  .coverimg {
+    
+    width: constants.$mobileMaxWidth;
+    height: constants.$mobileMaxWidth * 0.35;
+
+    @media screen and (min-width: constants.$mobileMaxWidth) {
+      width: constants.$maxWidth;
+      object-fit: cover;
+    }
+
+  }
+
+  .postPrev:first-child {
+    margin-top: 1rem;
+  }
+
+  .postPrev:not(:last-child) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 2rem;
+  }
+}

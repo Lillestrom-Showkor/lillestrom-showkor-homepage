@@ -10,14 +10,15 @@ import style from 'src/styles/components/DefaultLayout.module.scss';
 type Props = {
   children: React.ReactNode;
   className?: string;
+  title?: string;
+  description?: string;
 };
 
-const Layout = ({ children, className }: Props) => {
-
+const Layout = ({ children, className, title, description }: Props) => {
   return (
     <section className={cn(className, style.layout)}>
-      <Meta />
-      <Header className={style.header}/>
+      <Meta title={title} description={description} />
+      <Header className={style.header} />
       <main className={style.main}>{children}</main>
       <Footer className={style.footer} />
     </section>
