@@ -16,13 +16,13 @@ export default function Index() {
       <h1>Lillestrøm Showkor</h1>
       <article className={style.description}>
         <div className={style.collage}>
-          <Image alt={'Lillestrøm på byfesten'} src={coverImg} className={style.coverImg} />
-          <Image alt={'Lillestrøm på byfesten'} src={coverImg2} className={style.coverImg2} />
-          <Image alt={'Lillestrøm på byfesten'} src={coverImg3} className={style.coverImg3} />
+          <Image alt={'Lillestrøm Showkor på byfesten'} src={coverImg} className={style.coverImg} />
+          <Image alt={'Lillestrøm Showkor på byfesten'} src={coverImg2} className={style.coverImg2} />
+          <Image alt={'Lillestrøm Showkor på byfesten'} src={coverImg3} className={style.coverImg3} />
         </div>
         <p>
           Lillestrøm Showkor er en dynamisk a cappella korgruppe som ble etablert i januar 2019. Vi er en musikalsk
-          gjeng som elsker å utforske rytmisk musikk innen sjangrene pop, soul, funk og jazz.
+          gjeng som elsker å utforske rytmisk musikk over et vidt spekter av sjangre.
         </p>
         <p>
           Basert i hjertet av Lillestrøm, har vi som mål å underholde på ulike eventer og konsertarrangementer. Vår

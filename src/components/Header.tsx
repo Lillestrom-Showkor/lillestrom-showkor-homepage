@@ -15,7 +15,6 @@ type HeaderProps = {
 };
 
 const Header = ({ className }: HeaderProps) => {
-
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -33,7 +32,13 @@ const Header = ({ className }: HeaderProps) => {
           </div>
         </Link>
         <Navigation isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />
-        <MenuIcon className={style.menuIcon} onClick={() => setMenuOpen(!isMenuOpen)} />
+        <MenuIcon
+          className={style.menuIcon}
+          onClick={(event) => {
+            setMenuOpen(!isMenuOpen);
+            event.stopPropagation();
+          }}
+        />
       </div>
     </header>
   );
