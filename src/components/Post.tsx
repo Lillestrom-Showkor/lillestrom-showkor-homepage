@@ -11,26 +11,24 @@ import markdownStyles from 'src/styles/components/markdown-styles.module.scss';
 
 type PostProps = {
   title: string;
-  coverImage: string;
+  image: string;
   date: string;
-  author: Author;
   content: string;
   embeddedYouTube?: string;
-  ogImageUrl: string;
 };
 
-const Post = ({ title, coverImage, date, content, ogImageUrl, embeddedYouTube }: PostProps) => {
+const Post = ({ title, image, date, content, embeddedYouTube }: PostProps) => {
   return (
     <article className={style.post} title={title}>
       <Head>
-        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image" content={image} />
       </Head>
       <h2 className={style.title}>{title}</h2>
       <div className={style.meta}>{formatDate(date)}</div>
       <Image
         className={style.image}
         title={title}
-        src={coverImage}
+        src={image}
         width={560}
         height={315}
         alt={title}

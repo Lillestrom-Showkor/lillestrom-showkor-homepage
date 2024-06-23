@@ -19,47 +19,33 @@ export default function AboutPage() {
         </p>
         <Image alt={'Korsangere'} src={korsangImg} className={style.imageKorsang} />
 
-        <h3>Hvem passer vi for?</h3>
+        <h3>Opptak</h3>
         <p>
-          Lillestrøm Showkor er et supert kor for (nesten) alle som liker å synge i Lillestrøm og omegn. Vi liker å ha
-          bevegelse på scenen og synger alt mulig av sanger vi liker. Det er for det meste pop, rock, musikal og jazz i
-          repertoaret i dag. Vi har noe koreografi på sangene, da på et nivå de fleste skal kunne plukke opp med litt
-          øvelse. Vi tilpasser dette uansett til hvor trygge hver enkelt føler seg og bygger det opp bit for bit.
-        </p>
-
-        <h3>Hvordan er det å være medlem?</h3>
-        <p>
-          Vi har fast korøving en gang i uken: tirsdag kl. 18:30 på Sagdalen skole. I forkant av denne har vi en halv
-          time med rytme og dans for de som ønsker det. Det hender også at vi har ekstra øving på andre tidspunkter når
-          vi ser at dette kan være hensiktsmessig. Disse er frivillig og kan være for alle i koret eller bestemte
-          undergrupper (stemmegruppe, koreografiarbeid, el.). Et par ganger i året har vi også seminar hvor vi går litt
-          mer i dybden og utvikler oss som kor og sangere/artister.
+          Lillestrøm Showkor har fast korøvelse hver tirsdag klokken 18:30 på Sagdalen Skole. Etter at du har meldt
+          interesse blir du kontaktet for å avtale prøvesang i forkant av en av disse. Der skal vår dirigent skal få bli
+          bedre kjent med deg og din stemme og se hvordan du passer inn i koret. Samtidig får du muligheten til å få
+          svar på de spørsmål du måtte ha om koret vårt.
         </p>
         <p>
-          I løpet av året holder vi konserter. Disse kan være på større scener eller i mer intime omgivelser som kirker
-          eller utesteder. Dette er moro, spennende og givende og absolutt noe som er verdt å få være med på!
+          Etter vellykket prøvesang, kan du delta på korøvelse allerede samme kveld. Da får du oppleve hvor utrolig gøy
+          vi har det i koret! Da er det på en måte vi som har prøvesang for deg, siden vi veldig gjerne vil at du skal
+          trives og fortsette sammen med oss!
+        </p>
+        <h3>Prøvesang</h3>
+        <p>
+          Prøvesang kan virke litt nervepirrende. Alle vi i koret har nok kjent litt på sommerfuglene i magen før vi
+          skulle gjennom det. Vi kan likevel skrive under på at det er en mye triveligere opplevelse enn mange trodde på
+          forhånd. Vi i Lillestrøm Showkor er opptatt av at alle skal ha en fin opplevelse på prøvesang, uavhengig av
+          hva utfallet måtte bli.
         </p>
         <p>
-          I koret vårt har alle mulighet til å komme med innspill til både musikkvalg, regi og andre momenter. Vi gjør
-          vårt ytterste for at alle stemmer skal bli hørt!
-        </p>
-
-        <h3>Hva skjer etter at jeg har meldt interesse?</h3>
-        <p>
-          Etter at du har meldt interesse, er neste steg å komme innom for prøvesang. Du blir kontaktet av oss for å
-          eventuelt avtale tidspunkt (gjerne i forbindelse med en korøving). Prøvesang er en helt ufarlig og
-          uforpliktende sesjon med deg og vår dirigent hvor vi kartlegger blant annet hva slags stemmetype du har, hva
-          du liker å synge og generelt hvordan vi tror du passer inn i koret vårt. Samtidig får du muligheten til å vite
-          litt mer om hvordan ting fungerer hos oss og hva du eventuelt kan forvente dersom du blir med oss i koret.
+          Prøvesangen blir gjennomført med kun deg og dirigenten vår, som er utrolig snill og hyggelig. Du blir geleidet
+          gjennom noen stemme- og sangøvelser, slik at vi kan plassere stemmen din riktig. Deretter får du muligheten
+          til å synge litt.
         </p>
         <p>
-          Dersom vi ser at vi kan passe for deg, så kan det hende du allerede første kvelden får muligheten til å delta
-          på korøvingen og hilse på resten av oss i koret. Dette er igjen uforpliktende og kun for at du skal få bli
-          kjent med oss og se hva vi driver med. Etter det håper vi naturligvis å se deg igjen på senere korøvinger!
-        </p>
-        <p>
-          Forhåpentligvis har ikke dette skremt deg fra å ville synge med oss! Du kan melde interesse, og stille
-          eventuelle spørsmål du har, nedenfor.
+          La gleden din over å synge lede deg gjennom prøvesangen, så kommer dette til å gå veldig bra! Husk at vi heier
+          på deg!
         </p>
 
         <h3>Meld interesse her:</h3>

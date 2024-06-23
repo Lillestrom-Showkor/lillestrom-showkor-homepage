@@ -14,7 +14,6 @@ type Props = {
   coverImage: string;
   date: string;
   excerpt: string;
-  author: Author;
   slug: string;
 };
 
@@ -37,9 +36,7 @@ const PostPreview = ({ className, title, coverImage, date, excerpt, slug }: Prop
           {title}
         </Link>
       </h3>
-      <span className={style.meta}>
-        {formatDate(date)}
-      </span>
+      <span className={style.meta}>{formatDate(date)}</span>
       <p className={style.excerpt}>{excerpt}</p>
     </section>
   );

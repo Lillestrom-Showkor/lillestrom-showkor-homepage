@@ -1,13 +1,7 @@
 ---
 title: 'Lillestrøm Showkor opptrer på Byfesten i Lillestrøm'
-excerpt: 'Har du lyst til å se på Lillestrøm Showkor? Da har du sjansen på Byfesten i Lillestrøm fredag 13.juni klokken 18. Vi håper å se deg der!'
-coverImage: '/images/connect-white-winter-hymnal.jpg'
 date: '2024-05-30'
-author:
-  name: Eirik Reksten
-  picture: '/images/authors/eirik_reksten.jpg'
-ogImage:
-  url: '/images/connect-white-winter-hymnal.jpg'
+image: '/images/connect-white-winter-hymnal.jpg'
 ---
 
 Har du lyst til å se på Lillestrøm Showkor? Da har du sjansen på Byfesten i Lillestrøm fredag 13.juni klokken 18. Vi håper å se deg der!

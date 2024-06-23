@@ -1,14 +1,8 @@
 ---
 title: 'Vi vil ha flere menn i koret!'
-excerpt: 'Er du mann og har lurt på om å synge i kor hadde vært noe for deg? Da er det ingen grunn til å lure lenger! Kom på prøvesang hos oss og finn ut om dette passer for deg!'
-coverImage: '/images/korsang-farger.jpg'
 date: '2024-06-01'
+image: '/images/korsang-farger.jpg'
 embeddedYouTube: https://www.youtube.com/embed/HMlc5ZVJsUY
-author:
-  name: Eirik Reksten
-  picture: '/images/authors/eirik_reksten.jpg'
-ogImage:
-  url: '/images/korsang-farger.jpg'
 ---
 
 Er du mann og har lurt på om å synge i kor hadde vært noe for deg? Da er det ingen grunn til å lure lenger! Kom på prøvesang hos oss og finn ut om dette passer for deg!

@@ -14,7 +14,6 @@ type Props = {
 };
 
 export default function Blog({ allPosts }: Props) {
-  const title = `${info.name}`;
   return (
     <Layout title={`Aktuelt`} className={style.blog}>
       {allPosts.map((post) => (
@@ -22,9 +21,8 @@ export default function Blog({ allPosts }: Props) {
           className={style.postPrev}
           key={post.slug}
           title={post.title}
-          coverImage={post.coverImage}
+          coverImage={post.image}
           date={post.date}
-          author={post.author}
           slug={post.slug}
           excerpt={post.excerpt}
         />
@@ -34,7 +32,7 @@ export default function Blog({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt']);
+  const allPosts = await getAllPosts();
 
   return {
     props: { allPosts },

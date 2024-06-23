@@ -5,8 +5,7 @@ import Head from 'next/head';
 
 import Post from 'src/components/Post';
 import Layout from 'src/components/DefaultLayout';
-import { getPostBySlug, getAllPosts } from 'src/lib/api';
-import markdownToHtml from 'src/lib/markdownToHtml';
+import { getPostBySlug, getPostSlugs } from 'src/lib/api';
 import type PostType from 'src/interfaces/post';
 
 import details from 'data/info.json';
@@ -32,11 +31,9 @@ export default function PostPage({ post }: Props) {
       ) : (
         <Post
           title={post.title}
-          coverImage={post.coverImage}
+          image={post.image}
           date={post.date}
-          author={post.author}
           content={post.content}
-          ogImageUrl={post.ogImage.url}
           embeddedYouTube={post.embeddedYouTube}
         />
       )}
@@ -51,36 +48,23 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'date',
-    'slug',
-    'author',
-    'content',
-    'ogImage',
-    'coverImage',
-    'embeddedYouTube',
-  ]);
-  const content = await markdownToHtml(post.content || '');
+  const post = await getPostBySlug(params.slug);
 
   return {
     props: {
-      post: {
-        ...post,
-        content,
-      },
+      post: post,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug']);
+  const slugs = await getPostSlugs();
 
   return {
-    paths: posts.map((post) => {
+    paths: slugs.map((slug) => {
       return {
         params: {
-          slug: post.slug,
+          slug: slug,
         },
       };
     }),
