@@ -30,10 +30,12 @@
     "rehype-stringify": "^10.0.0",
     "remark": "^15.0.1",
     "remark-css-selectors": "^1.0.1",
+    "remark-directive": "^3.0.0",
     "remark-frontmatter": "^5.0.0",
     "remark-rehype": "^11.1.0",
     "sass": "^1.77.3",
     "typescript": "^5.4.5",
+    "unist-util-visit": "^5.0.0",
     "vfile-matter": "^5.0.0"
   }
 }
