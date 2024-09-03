@@ -9,6 +9,7 @@ import { getAllPosts } from 'src/lib/api';
 
 import korsangImg from 'public/images/korsang-farger.jpg';
 import style from 'src/styles/pages/join.module.scss';
+import ContentMeta from 'src/components/ContentMeta';
 
 type Props = {
   introPost: Post;
@@ -16,7 +17,8 @@ type Props = {
 
 export default function AboutPage({ introPost }: Props) {
   return (
-    <Layout title={`Begynne i koret?`}>
+    <Layout>
+      <ContentMeta title={`Begynne i koret?`} />
       <article className={style.join}>
         <h2>Bli med i Lillestrøm Showkor!</h2>
         <p>

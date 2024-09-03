@@ -9,6 +9,7 @@ import { getPostBySlug, getPostSlugs } from 'src/lib/api';
 import type PostType from 'src/interfaces/post';
 
 import details from 'data/info.json';
+import ContentMeta from 'src/components/ContentMeta';
 
 type Props = {
   post: PostType;
@@ -16,16 +17,13 @@ type Props = {
 
 export default function PostPage({ post }: Props) {
   const router = useRouter();
-  const defaultTitle = `${details.name} | ${post.title}`;
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
   return (
     <Layout>
-      <Head>
-        <title>{defaultTitle}</title>
-      </Head>
+      <ContentMeta title={post.title} description={post.excerpt} />
       {router.isFallback ? (
         <h1>Loading…</h1>
       ) : (

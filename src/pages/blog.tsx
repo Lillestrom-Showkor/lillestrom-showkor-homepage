@@ -8,6 +8,7 @@ import PostPreview from 'src/components/PostPreview';
 
 import info from 'data/info.json';
 import style from 'src/styles/pages/blog.module.scss';
+import ContentMeta from 'src/components/ContentMeta';
 
 type Props = {
   allPosts: Post[];
@@ -15,7 +16,8 @@ type Props = {
 
 export default function Blog({ allPosts }: Props) {
   return (
-    <Layout title={`Aktuelt`} className={style.blog}>
+    <Layout className={style.blog}>
+      <ContentMeta title={`Aktuelt`} />
       {allPosts.map((post) => (
         <PostPreview
           className={style.postPrev}

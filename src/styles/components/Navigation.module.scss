@@ -58,14 +58,17 @@
     padding: 1rem 1rem 0 0;
     text-wrap: nowrap;
 
-    .item a {
-      color: currentColor;
-      text-decoration-line: none;
-      width: 100%;
+    .item {
       cursor: pointer;
 
-      &:hover {
-        text-decoration-line: underline;
+      a {
+        color: currentColor;
+        text-decoration-line: none;
+        width: 100%;
+  
+        &:hover {
+          text-decoration-line: underline;
+        }
       }
     }
 

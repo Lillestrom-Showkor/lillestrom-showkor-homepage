@@ -19,15 +19,13 @@ type NavItemProps = {
 const NavItem = ({ path, title, currentPath, onClose }: NavItemProps) => {
   if (path === currentPath) {
     return (
-      <li className={style.item}>
-        <a
-          onClick={() => {
-            onClose && onClose();
-            return false;
-          }}
-        >
-          {title}
-        </a>
+      <li
+        className={style.item}
+        onClick={() => {
+          onClose && onClose();
+        }}
+      >
+        {title}
       </li>
     );
   }

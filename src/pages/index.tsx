@@ -7,12 +7,13 @@ import coverImg from 'public/images/byfesten_alle.jpg';
 import coverImg2 from 'public/images/byfesten_sopran.jpg';
 import coverImg3 from 'public/images/byfesten_alt_herre.jpg';
 
-import info from 'data/info.json';
 import style from 'src/styles/pages/index.module.scss';
+import ContentMeta from 'src/components/ContentMeta';
 
 export default function Index() {
   return (
-    <Layout className={style.index} description={info.ogDescription}>
+    <Layout className={style.index}>
+      <ContentMeta />
       <h1>Lillestrøm Showkor</h1>
       <article className={style.description}>
         <div className={style.collage}>

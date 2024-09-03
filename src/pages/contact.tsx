@@ -6,10 +6,12 @@ import style from 'src/styles/pages/contact.module.scss';
 import ContactForm from 'src/components/ContactForm';
 
 import oppdragImg from 'public/images/gruppebilde.jpg';
+import ContentMeta from 'src/components/ContentMeta';
 
 export default function BookingPage() {
   return (
-    <Layout title={'Kontakt'}>
+    <Layout>
+      <ContentMeta title={'Kontakt Oss'} />
       <article className={style.contact}>
         <h2>Kontakt Lillestrøm Showkor</h2>
         <Image alt={'Korsangere'} src={oppdragImg} className={style.image} width={320} />
