@@ -5,7 +5,7 @@ import parseMarkdown from './markdown';
 const postsDirectory = join(process.cwd(), 'data/posts');
 
 export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+  return fs.readdirSync(postsDirectory).map((slug) => slug.replace(/\.md$/, ''));
 }
 
 export async function getPostBySlug(slug: string) {
@@ -13,7 +13,7 @@ export async function getPostBySlug(slug: string) {
   const fullPath = join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-  const post = parseMarkdown(slug, fileContents);
+  const post = parseMarkdown(realSlug, fileContents);
 
   return await post;
 }
