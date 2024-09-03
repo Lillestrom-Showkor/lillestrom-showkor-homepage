@@ -1,5 +1,5 @@
 ---
-title: 'Hverdagen i Lillestrøm Showkor'
+title: 'Livet i Lillestrøm Showkor'
 date: '2024-06-21'
 image: '/images/koret.jpg'
 ---
@@ -14,23 +14,12 @@ Når vi skal velge tema og sanger til nye sesonger, sørger vi for å gi alle mu
 
 ## Øvinger
 
+Korøvingen er pulsen i Lillestrøm Showkor. Vi har øving en gang i uken, hvor vi treffes for å øve på nye og gamle sanger, trene på og tilpasse koreografi, samt selvsagt være litt sosiale. Dirigenten har planlagt et opplegg til oss som kan inkludere både oppvarming, sang- og vokaløvelser, trening i samspill, mm. De vanlige øvingene varer i to og en halv time inkludert en pause. I skrivende stund er dette på Sagdalen Skole tirsdager fra 18:30 til 21:00. I tillegg til disse settes det av og til opp frivillige ekstra øvinger hvor de som har tid og lyst kan stille.
+
+I tillegg har vi seminar kanskje et par ganger i året. Dette er lengre sesjoner hvor vi over en eller to dager (ofte helg) går litt mer i dybden og utvikler oss som kor og sangere/artister.
+
 ## Konserter og opptredener
 
-## Sosialt
+Flere ganger i løpet av året holder vi konserter. Disse kan være på større scener eller i mer intime omgivelser som kirker eller utesteder. Dette er moro, spennende og givende og absolutt noe som er verdt å få være med på!
 
-        <h3>Hvordan er det å være medlem?</h3>
-        <p>
-          Vi har fast korøving en gang i uken: tirsdag kl. 18:30 på Sagdalen skole. I forkant av denne har vi en halv
-          time med rytme og dans for de som ønsker det. Det hender også at vi har ekstra øving på andre tidspunkter når
-          vi ser at dette kan være hensiktsmessig. Disse er frivillig og kan være for alle i koret eller bestemte
-          undergrupper (stemmegruppe, koreografiarbeid, el.). Et par ganger i året har vi også seminar hvor vi går litt
-          mer i dybden og utvikler oss som kor og sangere/artister.
-        </p>
-        <p>
-          I løpet av året holder vi konserter. Disse kan være på større scener eller i mer intime omgivelser som kirker
-          eller utesteder. Dette er moro, spennende og givende og absolutt noe som er verdt å få være med på!
-        </p>
-        <p>
-          I koret vårt har alle mulighet til å komme med innspill til både musikkvalg, regi og andre momenter. Vi gjør
-          vårt ytterste for at alle stemmer skal bli hørt!
-        </p>
+Disse eventene gir oss både et mål og en arena for å få vist frem det vi har øvd på. Det kan bli litt armer og bein mot slutten for å få alt til å sitte, men det gir til gjengjeld en enorm mestringsfølelse når vi får det til!
