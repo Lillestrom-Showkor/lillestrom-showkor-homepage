@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import cn from 'classnames';
 
-import type Author from 'src/interfaces/author';
 import { formatDate } from 'src/lib/date';
 
 import style from 'src/styles/components/PostPreview.module.scss';
@@ -32,7 +31,7 @@ const PostPreview = ({ className, title, coverImage, date, excerpt, slug }: Prop
         />
       </Link>
       <h3 className={style.title}>
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
+        <Link as={`/posts/${slug}`} href="/posts/[slug]" aria-label={title}>
           {title}
         </Link>
       </h3>

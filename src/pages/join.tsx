@@ -1,21 +1,32 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Layout from 'src/components/DefaultLayout';
 import ContactForm from 'src/components/ContactForm';
-import korsangImg from 'public/images/korsang-farger.jpg';
+import Post from 'src/interfaces/post';
+import { getAllPosts } from 'src/lib/api';
 
+import korsangImg from 'public/images/korsang-farger.jpg';
 import style from 'src/styles/pages/join.module.scss';
 
-export default function AboutPage() {
+type Props = {
+  introPost: Post;
+};
+
+export default function AboutPage({ introPost }: Props) {
   return (
     <Layout title={`Begynne i koret?`}>
       <article className={style.join}>
         <h2>Bli med i Lillestrøm Showkor!</h2>
         <p>
           Så gøy at du tenker på å bli med i koret vårt! Dersom du vil melde interesse med en gang, kan du gå rett ned
-          til <a href={'#form'}>registreringsskjemaet</a> på bunnen av denne siden. Ellers kan du her lese litt mer om
-          både hvordan man blir med samt hva vi gjør i koret.
+          til <a href={'#form'}>registreringsskjemaet</a> på bunnen av denne siden. Ellers kan du lese litt mer om både
+          hvordan man blir med samt hva vi gjør i koret her:{' '}
+          <Link as={`/posts/${introPost.slug}`} href={`/posts/[slug]`}>
+            {introPost.title}
+          </Link>
+          .
         </p>
         <Image alt={'Korsangere'} src={korsangImg} className={style.imageKorsang} />
 
@@ -54,3 +65,11 @@ export default function AboutPage() {
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  const allPosts = await getAllPosts();
+
+  return {
+    props: { introPost: allPosts.find((post) => post.date === '2024-06-21') },
+  };
+};
