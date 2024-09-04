@@ -13,9 +13,7 @@ export async function getPostBySlug(slug: string) {
   const fullPath = join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-  const post = parseMarkdown(realSlug, fileContents);
-
-  return await post;
+  return await parseMarkdown(realSlug, fileContents);
 }
 
 export async function getAllPosts() {
