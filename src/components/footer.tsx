@@ -23,13 +23,13 @@ const Footer: React.FunctionComponent<FooterProps> = ({ className }: FooterProps
         </section>
         <section className={style.socialMedia}>
           <span className={style.footerLink}>
-            <a href={'https://www.instagram.com/lillestromshowkor/'}>
+            <a href={'https://www.instagram.com/lillestromshowkor/'} target={'_blank'}>
               <Image src={instagramLogo} alt={'Instagram Logo'} />
               {'Instagram'}
             </a>
           </span>
           <span className={style.footerLink}>
-            <a href={'https://www.facebook.com/lillestromshowkor/'}>
+            <a href={'https://www.facebook.com/lillestromshowkor/'} target={'_blank'}>
               <Image src={facebookLogo} alt={'Facebook Logo'} />
               {'Facebook'}
             </a>
@@ -37,7 +37,7 @@ const Footer: React.FunctionComponent<FooterProps> = ({ className }: FooterProps
         </section>
         <section className={style.grasrotandelen}>
           <span className={style.footerLink}>
-            <a href={'https://www.norsk-tipping.no/grasrotandelen/din-mottaker/922985022'}>
+            <a href={'https://www.norsk-tipping.no/grasrotandelen/din-mottaker/922985022'} target={'_blank'}>
               <Image src={ntLogo} alt={'Norsk Tipping Logo'} />
               {'Grasrotandelen'}
             </a>
