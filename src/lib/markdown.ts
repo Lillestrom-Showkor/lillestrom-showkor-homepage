@@ -23,7 +23,7 @@ export default async function parseMarkdown(slug: string, markdown: string): Pro
     .use(remarkRehype)
     .use(rehypeSanitize, {
       tagNames: [
-        ...defaultSchema.tagNames,
+        ...(defaultSchema.tagNames ?? []),
         'iframe'
       ],
       attributes: {

@@ -12,7 +12,7 @@ import { usePathname } from 'next/navigation';
 type NavItemProps = {
   path: string;
   title: string;
-  currentPath: string;
+  currentPath: string | null;
   onClose?: () => void;
 };
 
@@ -47,8 +47,8 @@ export const Navigation = ({ className, isOpen, onClose }: NavigationProps) => {
   const root = useRef<HTMLElement>(null);
   useEffect(() => {
     const listener = (event) => {
-      if (isOpen && root != event.target && !root.current.contains(event.target)) {
-        onClose();
+      if (isOpen && root != event.target && root.current != null && !root.current.contains(event.target)) {
+        onClose && onClose();
       }
     };
 
