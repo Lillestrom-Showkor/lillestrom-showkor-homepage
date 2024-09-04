@@ -1,0 +1,36 @@
+@use 'src/styles/abstracts/_constants' as constants;
+
+.notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  min-width: 20rem;
+
+  main {
+    flex: 1 1 auto;
+    position: relative;
+    overflow: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    transition-property: padding;
+    transition-duration: 200ms;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: constants.$maxWidthBreakpoint) {
+      padding: 1rem 0;
+      max-width: constants.$maxWidth;
+    }
+  }
+
+  .footer {
+    flex: 0 0 auto;
+    margin-top: 1rem;
+    align-self: stretch;
+  }
+}
