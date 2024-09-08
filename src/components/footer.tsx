@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 import instagramLogo from 'public/images/instagram_logo.png';
 import facebookLogo from 'public/images/facebook_logo.png';
+import youtubeLogo from 'public/images/youtube_logo.png';
 import ntLogo from 'public/images/norsk_tipping_logo.png';
 
 type FooterProps = {
@@ -32,6 +33,12 @@ const Footer: React.FunctionComponent<FooterProps> = ({ className }: FooterProps
             <a href={'https://www.facebook.com/lillestromshowkor/'} target={'_blank'}>
               <Image src={facebookLogo} alt={'Facebook Logo'} />
               {'Facebook'}
+            </a>
+          </span>
+          <span className={style.footerLink}>
+            <a href={'https://www.youtube.com/@lillestrmshowkor4322'} target={'_blank'}>
+              <Image src={youtubeLogo} alt={'Youtube Logo'} />
+              {'Youtube'}
             </a>
           </span>
         </section>

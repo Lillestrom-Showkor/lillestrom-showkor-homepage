@@ -23,7 +23,7 @@ export default function PostPage({ post }: Props) {
   }
   return (
     <Layout>
-      <ContentMeta title={post.title} description={post.excerpt} />
+      <ContentMeta title={post.title} description={post.excerpt} path={`/${post.slug}`} />
       {router.isFallback ? (
         <h1>Loading…</h1>
       ) : (

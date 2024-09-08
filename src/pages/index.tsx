@@ -21,7 +21,7 @@ type IndexProps = {
 export default function Index({ latestPost }: IndexProps) {
   return (
     <Layout className={style.index}>
-      <ContentMeta />
+      <ContentMeta title={'Det mest gøyale koret på Romerike!'} path={'/'} />
       <section className={cn(style.title, style.collage)}>
         <div className={style.content}>
           <h1>Lillestrøm Showkor</h1>
@@ -73,7 +73,7 @@ export default function Index({ latestPost }: IndexProps) {
         className={style.join}
         imageSrc={joinImg}
         imageAlt={'Sangere i ulike farger'}
-        title={'Bli med i Lillestrøm Showkor?'}
+        title={'Bli med i koret?'}
       >
         <p>
           Bor du i Lillestrøm eller et annet sted på Nedre Romerike og lurer på å bli med i et kor? Vi er et energisk og

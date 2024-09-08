@@ -15,7 +15,7 @@ type Props = {
 export default function Blog({ allPosts }: Props) {
   return (
     <Layout className={style.blog}>
-      <ContentMeta title={`Aktuelt`} />
+      <ContentMeta title={`Aktuelt`} path={'/blog'} />
       {allPosts.map((post) => (
         <PostPreview
           className={style.postPrev}

@@ -19,7 +19,7 @@ type Props = {
 export default function AboutPage({ introPost }: Props) {
   return (
     <Layout>
-      <ContentMeta title={`Begynne i koret?`} />
+      <ContentMeta title={`Begynne i koret?`} path={'/join'} />
       <article className={style.join}>
         <h2>Bli med i Lillestrøm Showkor!</h2>
         <p>

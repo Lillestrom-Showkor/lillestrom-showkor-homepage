@@ -11,7 +11,7 @@ import ContentMeta from 'src/components/ContentMeta';
 export default function BookingPage() {
   return (
     <Layout>
-      <ContentMeta title={'Kontakt Oss'} />
+      <ContentMeta title={'Kontakt Oss'} path={'/contact'} />
       <article className={style.contact}>
         <h2>Kontakt Lillestrøm Showkor</h2>
         <Image alt={'Korsangere'} src={oppdragImg} className={style.image} width={320} />

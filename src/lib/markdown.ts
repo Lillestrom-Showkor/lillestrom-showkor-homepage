@@ -110,7 +110,7 @@ function directiveYoutube() {
 
         data.hName = 'iframe';
         data.hProperties = {
-          src: 'https://www.youtube.com/embed/' + id,
+          src: `https://www.youtube.com/embed/${id}`,
           width: 560,
           height: 315,
           frameBorder: 0,
