@@ -10,6 +10,7 @@ import { getAllPosts } from 'src/lib/api';
 import korsangImg from 'public/images/korsang-farger.jpg';
 import style from 'src/styles/pages/join.module.scss';
 import ContentMeta from 'src/components/ContentMeta';
+import { formatDate } from 'src/lib/date';
 
 type Props = {
   introPost: Post;
@@ -72,6 +73,6 @@ export const getStaticProps = async () => {
   const allPosts = await getAllPosts();
 
   return {
-    props: { introPost: allPosts.find((post) => post.date === '2024-06-21') },
+    props: { introPost: allPosts.find((post) => formatDate(post.date) === '21.06.2024') },
   };
 };

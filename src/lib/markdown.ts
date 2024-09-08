@@ -46,10 +46,10 @@ export default async function parseMarkdown(slug: string, markdown: string): Pro
 
   return {
     content: String(file.value),
-    date: meta.date, // html.data.matter.date,
-    title: meta.title, // html.data.matter.title,
-    image: meta.image, // matter.coverImage,
-    excerpt: file.data.excerpt as string, // matter.excerpt,
+    date: meta.date,
+    title: meta.title,
+    image: meta.image,
+    excerpt: file.data.excerpt as string,
     slug: slug,
   };
 

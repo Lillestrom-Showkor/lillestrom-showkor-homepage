@@ -1,0 +1,112 @@
+@use 'src/styles/abstracts/_constants' as constants;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  min-width: 20rem;
+
+  .header {
+    flex: 0 0 auto;
+    align-self: stretch;
+    border-bottom: 1px solid grey;
+    padding: 0 1rem;
+  }
+
+  .nav {
+    flex: 0 0 auto;
+    align-self: stretch;
+  }
+
+  main {
+    flex: 1 1 auto;
+    position: relative;
+    overflow: auto;
+
+    width: 100%;
+    transition-property: padding;
+    transition-duration: 200ms;
+
+    
+  }
+
+  .footer {
+    flex: 0 0 auto;
+    padding: 1rem;
+    align-self: stretch;
+  }
+}
+
+.layoutSection {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .innerSection {
+    
+    padding: 1rem;  
+    transition-property: padding;
+    transition-duration: 200ms;
+
+    font-size: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      height: 10rem;
+      width: 16rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 1rem 0 1rem 0;
+    }
+
+    @media screen and (min-width: constants.$maxWidthBreakpoint) {
+      padding: 1rem 0;
+      max-width: constants.$maxWidth;
+
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto 1fr;
+      
+      h2 {
+        grid-column: 1/2;
+        grid-row: 1/2
+      }
+      .content {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .img {
+        height: 16rem;
+        width: 16rem;
+        margin: 0 0 0 2rem;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        align-self: center;
+      }
+
+      &.imgLeft {
+        h2 {
+          grid-column: 2/3;
+          grid-row: 1/2
+        }
+        .content {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+        .img {
+          grid-column: 1/2;
+          grid-row: 1/3;
+          margin: 0 2rem 0 0;
+        }
+      }
+
+    }  
+  }
+
+}
