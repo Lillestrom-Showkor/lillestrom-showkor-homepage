@@ -11,6 +11,7 @@ import korsangImg from 'public/images/korsang-farger.jpg';
 import style from 'src/styles/pages/join.module.scss';
 import ContentMeta from 'src/components/ContentMeta';
 import { formatDate } from 'src/lib/date';
+import Alert, { AlertType } from 'src/components/Alert';
 
 type Props = {
   introPost: Post;
@@ -20,6 +21,12 @@ export default function AboutPage({ introPost }: Props) {
   return (
     <Layout>
       <ContentMeta title={`Begynne i koret?`} path={'/join'} />
+      <Alert
+        type={AlertType.WARNING}
+        text={
+          'Grunnet pågang og en overvekt av kvinner i koret i dag, er vi nødt til å være noe mer restriktive i opptak av nye kvinnestemmer (sopran/alt). Ta gjerne likevel kontakt, det kan godt hende at akkurat din stemme passer godt inn i gruppen!'
+        }
+      />
       <article className={style.join}>
         <h2>Bli med i Lillestrøm Showkor!</h2>
         <p>
@@ -63,7 +70,7 @@ export default function AboutPage({ introPost }: Props) {
         </p>
 
         <h3>Meld interesse her:</h3>
-        <ContactForm subject={'Innmelding Lillestrøm Showkor'} id={'form'} />
+        <ContactForm subject={'Innmelding Lillestrøm Showkor'} showPhoneEntry={true} id={'form'} />
       </article>
     </Layout>
   );
