@@ -1,5 +1,5 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import cn from 'classnames';
 
 import Layout, { IndexLayoutSection } from 'src/components/IndexLayout';

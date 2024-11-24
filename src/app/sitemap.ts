@@ -1,5 +1,4 @@
 import type { MetadataRoute } from 'next';
-import { getAllPosts, getPostSlugs } from 'src/lib/api';
 
 function url(suffix: string): string {
   return `https://lillestrømshowkor.no${suffix}`;
