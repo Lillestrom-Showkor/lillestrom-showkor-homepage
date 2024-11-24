@@ -1,4 +1,4 @@
-import type { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next';
 import { getAllPosts, getPostSlugs } from 'src/lib/api';
 
 function url(suffix: string): string {
@@ -7,12 +7,12 @@ function url(suffix: string): string {
 
 function post(slug: string, date: string) {
   return {
-    slug, date,
+    slug,
+    date,
   };
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-
   const posts = [
     post('2024-05-30-byfesten-lillestrøm', '2024-05-30'),
     post('2024-06-01-rekruttere-menn', '2024-06-01'),
@@ -29,13 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: url(''),
-      lastModified: new Date(2024,9,4),
+      lastModified: new Date(2024, 9, 4),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
       url: url('/blog'),
-      lastModified: new Date(2024,9,4),
+      lastModified: new Date(2024, 9, 4),
       changeFrequency: 'weekly',
       priority: 0.3,
     },
@@ -47,10 +47,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: url('/join'),
-      lastModified: new Date(2024,9,4),
+      lastModified: new Date(2024, 9, 4),
       changeFrequency: 'monthly',
       priority: 0.5,
     },
-    ...posts
+    ...posts,
   ];
 }

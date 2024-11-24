@@ -1,9 +1,7 @@
 @use 'src/styles/abstracts/_constants' as constants;
 
 .blog {
-
   .coverimg {
-    
     width: constants.$mobileMaxWidth;
     height: constants.$mobileMaxWidth * 0.35;
 
@@ -11,7 +9,6 @@
       width: constants.$maxWidth;
       object-fit: cover;
     }
-
   }
 
   .postPrev:first-child {

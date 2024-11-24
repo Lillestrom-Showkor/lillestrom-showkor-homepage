@@ -34,17 +34,14 @@
       right: -20rem;
       box-shadow: none;
     }
-
   }
 
   .navtitle {
-
     @media screen and (min-width: constants.$mobileMaxWidth) {
       display: none;
     }
 
     margin-top: 1rem;
-
   }
 
   .menu {
@@ -65,7 +62,7 @@
         color: currentColor;
         text-decoration-line: none;
         width: 100%;
-  
+
         &:hover {
           text-decoration-line: underline;
         }

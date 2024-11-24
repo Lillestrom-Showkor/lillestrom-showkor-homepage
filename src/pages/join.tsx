@@ -42,15 +42,24 @@ export default function AboutPage({ introPost }: Props) {
 
         <h3>Opptak</h3>
         <p>
-          Lillestrøm Showkor har fast korøvelse hver tirsdag klokken 18:30 på Sagdalen Skole. Etter at du har meldt
-          interesse blir du kontaktet for å avtale prøvesang i forkant av en av disse. Der skal vår dirigent skal få bli
-          bedre kjent med deg og din stemme og se hvordan du passer inn i koret. Samtidig får du muligheten til å få
-          svar på de spørsmål du måtte ha om koret vårt.
+          Vi forsøker å samle opptakene våre til starten av hvert semester. Unntaket er i de tilfellene vi ser at vi
+          trenger flere i en bestemt seksjon.
+        </p>
+
+        <p>
+          Etter at du har meldt interesse blir du kontaktet for å avtale prøvesang i forkant av en av disse. Der får du
+          møte vår dirigent og i noen tilfeller en av våre sangere som skal få bli bedre kjent med deg og din stemme og
+          se hvordan du passer inn i koret. Samtidig får du muligheten til å få svar på de spørsmål du måtte ha om koret
+          vårt.
         </p>
         <p>
-          Etter vellykket prøvesang, kan du delta på korøvelse allerede samme kveld. Da får du oppleve hvor utrolig gøy
-          vi har det i koret! Da er det på en måte vi som har prøvesang for deg, siden vi veldig gjerne vil at du skal
-          trives og fortsette sammen med oss!
+          Etter vellykket prøvesang, starter en prøveperiode på fire uker. I løpet av denne tiden kan du fortsatt trekke
+          deg når du vil. Du trenger selvsagt heller ikke å betale for medlemskap i denne perioden. Forhåpentligvis får
+          du oppleve hvor utrolig gøy vi har det i koret! Da er det på en måte vi som har prøvesang for deg, siden vi
+          veldig gjerne vil at du skal trives og fortsette sammen med oss!
+        </p>
+        <p>
+          Etter prøveperioden, gitt at alt går bra, blir du fullverdig medlem i koret og er del av Lillestrøm Showkor!
         </p>
         <h3>Prøvesang</h3>
         <p>

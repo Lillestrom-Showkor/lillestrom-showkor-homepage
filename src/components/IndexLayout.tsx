@@ -27,7 +27,7 @@ const IndexLayout = ({ children, className }: Props) => {
 type SectionProps = {
   children: React.ReactNode;
   className?: string;
-  title: string;
+  title: string | React.ReactNode;
   imageLeft?: boolean;
   imageSrc?: StaticImageData;
   imageAlt?: string;

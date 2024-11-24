@@ -6,7 +6,8 @@
     align-self: flex-start;
   }
 
-  input, textarea {
+  input,
+  textarea {
     align-self: flex-start;
   }
 
@@ -26,7 +27,6 @@
   }
 
   .error {
-    color: red
+    color: red;
   }
-
 }

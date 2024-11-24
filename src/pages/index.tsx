@@ -91,7 +91,13 @@ export default function Index({ latestPost }: IndexProps) {
           imageSrc={{ src: latestPost!.image, width: 256, height: 256 }}
           imageAlt={latestPost?.title}
           imageLeft={true}
-          title={`Aktuelt: ${latestPost!.title}`}
+          title={
+            <Link
+              as={`/posts/${latestPost!.slug}`}
+              href="/posts/[slug]"
+              aria-label={latestPost!.title}
+            >{`Aktuelt: ${latestPost!.title}`}</Link>
+          }
         >
           <p>{latestPost!.excerpt}</p>
           <Link as={`/posts/${latestPost!.slug}`} href="/posts/[slug]" aria-label={latestPost!.title}>

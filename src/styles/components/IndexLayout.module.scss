@@ -27,8 +27,6 @@
     width: 100%;
     transition-property: padding;
     transition-duration: 200ms;
-
-    
   }
 
   .footer {
@@ -40,14 +38,13 @@
 
 .layoutSection {
   width: 100%;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .innerSection {
-    
-    padding: 1rem;  
+    padding: 1rem;
     transition-property: padding;
     transition-duration: 200ms;
 
@@ -56,6 +53,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h2 a {
+      text-decoration: none;
+      color: currentColor;
+    }
 
     .img {
       height: 10rem;
@@ -72,10 +74,10 @@
       display: grid;
       grid-template-columns: 1fr auto;
       grid-template-rows: auto 1fr;
-      
+
       h2 {
         grid-column: 1/2;
-        grid-row: 1/2
+        grid-row: 1/2;
       }
       .content {
         grid-column: 1/2;
@@ -93,7 +95,7 @@
       &.imgLeft {
         h2 {
           grid-column: 2/3;
-          grid-row: 1/2
+          grid-row: 1/2;
         }
         .content {
           grid-column: 2/3;
@@ -105,8 +107,6 @@
           margin: 0 2rem 0 0;
         }
       }
-
-    }  
+    }
   }
-
 }
