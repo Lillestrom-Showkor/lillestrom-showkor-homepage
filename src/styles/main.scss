@@ -1,5 +1,6 @@
 @use 'src/styles/base/form.scss';
 @use 'src/styles/base/typography.scss';
+@use 'src/styles/abstracts/colors.scss' as colors;
 
 * {
   box-sizing: border-box;
@@ -18,4 +19,9 @@ body,
 article {
   line-height: 1.375;
   font-size: 1.25rem;
+}
+
+a {
+  color: colors.$themeOrange;
+  font-weight: bold;
 }

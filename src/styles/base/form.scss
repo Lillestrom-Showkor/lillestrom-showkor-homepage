@@ -1,4 +1,6 @@
-$button-color: lightblue;
+@use 'src/styles/abstracts/_colors' as colors;
+
+$button-color: colors.$themeLightGrey;
 
 label {
   margin-top: 1rem;
@@ -17,7 +19,7 @@ textarea {
 }
 
 button {
-  color: #333;
+  color: colors.$themeBlue;
   background-color: $button-color;
   border: 1px solid #666;
   border-radius: 0.25rem;
