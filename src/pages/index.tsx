@@ -96,7 +96,7 @@ export default function Index({ latestPost }: IndexProps) {
               as={`/posts/${latestPost!.slug}`}
               href="/posts/[slug]"
               aria-label={latestPost!.title}
-            >{`Aktuelt: ${latestPost!.title}`}</Link>
+            >{latestPost!.title}</Link>
           }
         >
           <p>{latestPost!.excerpt}</p>
