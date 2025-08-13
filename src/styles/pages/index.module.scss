@@ -41,8 +41,8 @@
   }
 
   .booking {
+    background-color: colors.$themeWhite;
 
-    background-color: colors.$themeLightGrey;
     .bookLink {
       display: block;
       text-align: center;
@@ -53,7 +53,7 @@
   }
 
   .join {
-    background-color: colors.$themeWhite;
+    background-color: colors.$themeLightGrey;
 
     .joinLink {
       display: block;

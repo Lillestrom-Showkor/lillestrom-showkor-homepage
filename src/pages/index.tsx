@@ -28,6 +28,23 @@ export default function Index({ latestPost }: IndexProps) {
         </div>
         <Image alt={'Lillestrøm Showkor på byfesten'} src={coverImg} className={style.coverImg} />
       </section>
+      <IndexLayoutSection
+        className={style.about}
+        imageSrc={coverImg}
+        imageAlt={'Lillestrøm Showkor'}
+        title={'Hvem er vi?'}
+      >
+        <p>
+          Lillestrøm Showkor er et dynamisk kor i Lillestrøm, etablert i januar 2019. Vi har sangere fra store deler av
+          Nedre Romerike og elsker å utforske rytmisk musikk innen et bredt spekter av sjangre.
+        </p>
+        <p>
+          Vårt mål er å underholde på ulike eventer og konserter, og med vår musikalske lekenhet og lidenskap blir hver
+          fremføring en minneverdig opplevelse. Fra klassiske slagere til moderne hits, sørger Lillestrøm Showkor for at
+          det alltid svinger. Ser du etter et kor i Lillestrøm eller ellers på Romerike, er vi et kor som garanterer
+          musikkglede!
+        </p>
+      </IndexLayoutSection>
       {latestPost !== null && (
         <IndexLayoutSection
           className={style.latest}
@@ -48,23 +65,6 @@ export default function Index({ latestPost }: IndexProps) {
           </Link>
         </IndexLayoutSection>
       )}
-      <IndexLayoutSection
-        className={style.about}
-        imageSrc={coverImg}
-        imageAlt={'Lillestrøm Showkor'}
-        title={'Hvem er vi?'}
-      >
-        <p>
-          Lillestrøm Showkor er et dynamisk kor i Lillestrøm, etablert i januar 2019. Vi har sangere fra store deler av
-          Nedre Romerike og elsker å utforske rytmisk musikk innen et bredt spekter av sjangre.
-        </p>
-        <p>
-          Vårt mål er å underholde på ulike eventer og konserter, og med vår musikalske lekenhet og lidenskap blir hver
-          fremføring en minneverdig opplevelse. Fra klassiske slagere til moderne hits, sørger Lillestrøm Showkor for at
-          det alltid svinger. Ser du etter et kor i Lillestrøm eller ellers på Romerike, er vi et kor som garanterer
-          musikkglede!
-        </p>
-      </IndexLayoutSection>
       <IndexLayoutSection
         className={style.booking}
         imageSrc={bookingImg}
