@@ -28,6 +28,26 @@ export default function Index({ latestPost }: IndexProps) {
         </div>
         <Image alt={'Lillestrøm Showkor på byfesten'} src={coverImg} className={style.coverImg} />
       </section>
+      {latestPost !== null && (
+        <IndexLayoutSection
+          className={style.latest}
+          imageSrc={{ src: latestPost!.image, width: 256, height: 256 }}
+          imageAlt={latestPost?.title}
+          imageLeft={true}
+          title={
+            <Link
+              as={`/posts/${latestPost!.slug}`}
+              href="/posts/[slug]"
+              aria-label={latestPost!.title}
+            >{latestPost!.title}</Link>
+          }
+        >
+          <p>{latestPost!.excerpt}</p>
+          <Link as={`/posts/${latestPost!.slug}`} href="/posts/[slug]" aria-label={latestPost!.title}>
+            {'Les mer...'}
+          </Link>
+        </IndexLayoutSection>
+      )}
       <IndexLayoutSection
         className={style.about}
         imageSrc={coverImg}
@@ -85,26 +105,6 @@ export default function Index({ latestPost }: IndexProps) {
           {'OPPTAK'}
         </Link>
       </IndexLayoutSection>
-      {latestPost !== null && (
-        <IndexLayoutSection
-          className={style.latest}
-          imageSrc={{ src: latestPost!.image, width: 256, height: 256 }}
-          imageAlt={latestPost?.title}
-          imageLeft={true}
-          title={
-            <Link
-              as={`/posts/${latestPost!.slug}`}
-              href="/posts/[slug]"
-              aria-label={latestPost!.title}
-            >{latestPost!.title}</Link>
-          }
-        >
-          <p>{latestPost!.excerpt}</p>
-          <Link as={`/posts/${latestPost!.slug}`} href="/posts/[slug]" aria-label={latestPost!.title}>
-            {'Les mer...'}
-          </Link>
-        </IndexLayoutSection>
-      )}
     </Layout>
   );
 }
