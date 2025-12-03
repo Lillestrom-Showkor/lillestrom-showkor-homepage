@@ -1,4 +1,7 @@
+@use 'sass:color';
+
 @use 'src/styles/abstracts/_colors' as colors;
+
 
 $button-color: colors.$themeLightGrey;
 
@@ -28,10 +31,10 @@ button {
   cursor: pointer;
 
   &:hover {
-    background-color: darken($button-color, 5%);
+    background-color: color.adjust($button-color, $lightness: -5%);
   }
 
   &:active {
-    background-color: darken($button-color, 10%);
+    background-color: color.adjust($button-color, $lightness: -10%);
   }
 }

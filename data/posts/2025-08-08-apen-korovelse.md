@@ -4,7 +4,7 @@ date: '2025-08-08'
 image: '/images/apen_ovelse.jpg'
 ---
 
-Liker du å synge, men er usikker på hvordan det er å være med i kor? Nå har du sjansen! Lillestrøm Showkor inviterer til åpen øvelse 26.august kl. 18:30 på Sagdalen Skole (bygg 2).
+Liker du å synge, men er usikker på hvordan det er å være med i kor? Nå har du sjansen! Lillestrøm Showkor inviterer til åpen øvelse 26.august kl. 18\:30 på Sagdalen Skole (bygg 2).
 
 Denne kvelden får du:
 - Møte dirigenten vår og våre hyggelige korister
