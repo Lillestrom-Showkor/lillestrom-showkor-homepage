@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import Layout, { IndexLayoutSection } from 'src/components/IndexLayout';
 
-import coverImg from 'public/images/byfesten_alle.jpg';
+import coverImg from 'public/images/cover.jpg';
 import bookingImg from 'public/images/connect-white-winter-hymnal.jpg';
 import joinImg from 'public/images/korsang-farger.jpg';
 
