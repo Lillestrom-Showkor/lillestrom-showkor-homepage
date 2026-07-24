@@ -13,70 +13,70 @@ import ContentMeta from 'src/components/ContentMeta';
 import { formatDate } from 'src/lib/date';
 import Alert, { AlertType } from 'src/components/Alert';
 
-type Props = {
-  introPost: Post;
-};
-
-export default function AboutPage({ introPost }: Props) {
+export default function AboutPage() {
   return (
     <Layout>
       <ContentMeta title={`Begynne i koret?`} path={'/join'} />
-      <Alert
-        type={AlertType.WARNING}
-        text={
-          'Grunnet pågang og en overvekt av kvinner i koret i dag, er vi nødt til å være noe mer restriktive i opptak av nye kvinnestemmer (sopran/alt). Ta gjerne likevel kontakt, det kan godt hende at akkurat din stemme passer godt inn i gruppen!'
-        }
-      />
       <article className={style.join}>
         <h2>Bli med i Lillestrøm Showkor!</h2>
+        <p>Så hyggelig at du vurderer å bli en del av Lillestrøm Showkor!</p>
         <p>
-          Så gøy at du tenker på å bli med i koret vårt! Dersom du vil melde interesse med en gang, kan du gå rett ned
-          til <a href={'#form'}>registreringsskjemaet</a> på bunnen av denne siden. Ellers kan du lese litt mer om både
-          hvordan man blir med samt hva vi gjør i koret her:{' '}
-          <Link as={`/posts/${introPost.slug}`} href={`/posts/[slug]`}>
-            {introPost.title}
-          </Link>
-          .
+          Hvis du allerede vet at du ønsker å bli med, kan du registrere interessen din i skjemaet nederst på siden. Vil
+          du å vite litt mer om hvordan opptaket fungerer og hva du kan forvente som medlem, finner du informasjonen
+          nedenfor.
         </p>
+
         <Image alt={'Korsangere'} src={korsangImg} className={style.imageKorsang} />
 
         <h3>Opptak</h3>
         <p>
-          Vi forsøker å samle opptakene våre til starten av hvert semester. Unntaket er i de tilfellene vi ser at vi
-          trenger flere i en bestemt seksjon.
+          Lillestrøm Showkor har ett hovedopptak hvert år i august. Dersom vi har ledige plasser i flere stemmegrupper,
+          gjennomfører vi også et opptak i januar.
         </p>
 
         <p>
-          Etter at du har meldt interesse blir du kontaktet for å avtale prøvesang i forkant av en av disse. Der får du
-          møte vår dirigent og i noen tilfeller en av våre sangere som skal få bli bedre kjent med deg og din stemme og
-          se hvordan du passer inn i koret. Samtidig får du muligheten til å få svar på de spørsmål du måtte ha om koret
-          vårt.
+          Opptaket starter med en <em>åpen øvelse</em>, hvor du får muligheten til å bli kjent med koret, dirigenten og
+          hvordan vi jobber. Dette er en fin anledning til å prøve ut om Lillestrøm Showkor er noe for deg &mdash; helt
+          uforpliktende.
         </p>
         <p>
-          Etter vellykket prøvesang, starter en prøveperiode på fire uker. I løpet av denne tiden kan du fortsatt trekke
-          deg når du vil. Du trenger selvsagt heller ikke å betale for medlemskap i denne perioden. Forhåpentligvis får
-          du oppleve hvor utrolig gøy vi har det i koret! Da er det på en måte vi som har prøvesang for deg, siden vi
-          veldig gjerne vil at du skal trives og fortsette sammen med oss!
+          Dersom du ønsker å gå videre etter den åpne øvelsen, inviterer vi deg til en prøvesang med dirigenten vår. I
+          tillegg blir du invitert til en uformell samtale med to representanter fra styret. Samtalen handler om å bli
+          bedre kjent med hverandre, svare på spørsmål og finne ut om koret passer for deg.
         </p>
         <p>
-          Etter prøveperioden, gitt at alt går bra, blir du fullverdig medlem i koret og er del av Lillestrøm Showkor!
+          Etter prøvesangen vil du få en tilbakemelding på om vi har mulighet til å tilby deg plass i koret. Da starter
+          en prøveperiode på fire uker. I denne perioden kan både du og koret kjenne etter om dette føles riktig. Du
+          står fritt til å trekke deg dersom du ønsker det, og det er selvfølgelig ingen medlemskontingent i
+          prøveperioden.
         </p>
+        <p>Etter prøveperioden, dersom alt fungerer godt, blir du fullverdig medlem av Lillestrøm Showkor.</p>
         <h3>Prøvesang</h3>
         <p>
-          Prøvesang kan virke litt nervepirrende. Alle vi i koret har nok kjent litt på sommerfuglene i magen før vi
-          skulle gjennom det. Vi kan likevel skrive under på at det er en mye triveligere opplevelse enn mange trodde på
-          forhånd. Vi i Lillestrøm Showkor er opptatt av at alle skal ha en fin opplevelse på prøvesang, uavhengig av
-          hva utfallet måtte bli.
+          Vi vet at prøvesang kan føles litt skummelt. De aller fleste av oss har kjent på nervene før vår egen
+          prøvesang, men erfaringen er at den er langt hyggeligere enn mange ser for seg.
         </p>
         <p>
-          Prøvesangen blir gjennomført med kun deg og dirigenten vår, som er utrolig snill og hyggelig. Du blir geleidet
-          gjennom noen stemme- og sangøvelser, slik at vi kan plassere stemmen din riktig. Deretter får du muligheten
-          til å synge litt.
+          Prøvesangen gjennomføres kun med deg og dirigenten vår i en avslappet atmosfære. Du blir geleidet gjennom noen
+          stemme- og sangøvelser, i tillegg til en låt du har forberedt. På den måten kan dirigenten bli kjent med
+          stemmen din og hvilken stemmegruppe du vil fungere i. Du trenger ikke å være perfekt eller prestere feilfritt.
+          Det viktigste for oss er å høre stemmen din og bli kjent med ditt musikalske potensial.
+        </p>
+        <h3>Passer Lillestrøm Showkor for deg?</h3>
+        <p>
+          Vi er et kor med høye ambisjoner og et sterkt ønske om å utvikle oss sammen. Derfor ser vi etter sangere som
+          ikke bare liker å synge, men som også ønsker å bidra til fellesskapet.
         </p>
         <p>
-          La gleden din over å synge lede deg gjennom prøvesangen, så kommer dette til å gå veldig bra! Husk at vi heier
-          på deg!
+          Vi forventer at medlemmene prioriterer øvelser og konserter, møter godt forberedt og viser engasjement både
+          musikalsk og sosialt. Regelmessig oppmøte er viktig, både for din egen utvikling og fordi hver enkelt stemme
+          er en viktig del av helheten.
         </p>
+        <p>
+          Til gjengjeld får du et kor som satser på kvalitet, musikalsk utvikling, spennende konserter og et
+          inkluderende miljø der vi jobber mot felles mål og har det gøy underveis.
+        </p>
+        <p>Vi gleder oss til å bli kjent med deg!</p>
 
         <h3>Meld interesse her:</h3>
         <ContactForm subject={'Innmelding Lillestrøm Showkor'} showPhoneEntry={true} id={'form'} />
@@ -84,11 +84,3 @@ export default function AboutPage({ introPost }: Props) {
     </Layout>
   );
 }
-
-export const getStaticProps = async () => {
-  const allPosts = await getAllPosts();
-
-  return {
-    props: { introPost: allPosts.find((post) => formatDate(post.date) === '21.06.2024') },
-  };
-};
